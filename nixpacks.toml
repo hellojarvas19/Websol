@@ -2,10 +2,10 @@
 nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["npm install", "chmod -R +x node_modules/.bin"]
+cmds = ["npm install"]
 
 [phases.build]
-cmds = ["npm run build"]
+cmds = ["chmod -R +x node_modules/.bin", "npm run build"]
 
 [start]
 cmd = "npm run preview"

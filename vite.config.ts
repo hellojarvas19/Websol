@@ -13,4 +13,13 @@ export default defineConfig({
       'rollup': '@rollup/wasm-node',
     },
   },
+  preview: {
+    host: '0.0.0.0',
+    port: parseInt(process.env.PORT || '3000'),
+    strictPort: true,
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+  },
 });
